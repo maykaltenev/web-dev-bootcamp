@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- button outside the form wont submit the form -->
+    <button type="button">Outside The Form</button>
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+      <!-- button inside the form in type "button" will behave like a normal button-->
+      <button type="button">PLEASE DO NOT SUBMIT THE FORM</button>
+      <p>
+        <label for="username">Enter a Username:</label>
+        <input id="username" type="text" placeholder="username" />
+      </p>
+      <p>
+        <label for="passowrd">Enter password:</label>
+        <input id="password" type="password" placeholder="password" />
+      </p>
+      <!-- default button is with submit behave inside of a form will try to submit-->
+      <button>IN THE MIDDLE</button>
+      <p>
+        <label for="color">Enter a color:</label>
+        <input type="color" placeholder="color" id="color" />
+      </p>
+      <p>
+        <label for="number">Enter a number</label>
+        <input type="number" placeholder="enter a number" id="number" />
+      </p>
+      <!-- This button submit the form -->
+      <button>Submit</button>
+      <!-- Alternative way of submit the form -->
+      <input type="submit" value="Click Me!" />
+    </form>
+    <!-- Outside of a form. no default behavior -->
+    <button>Not Inside The Form</button>
+  </body>
+</html>
