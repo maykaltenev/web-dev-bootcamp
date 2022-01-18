@@ -26,7 +26,14 @@ span {
 .tag {
   background-color: red;
   color: yellow;
-} /* 
+}
+section span a {
+  color: #457b9d;
+}
+footer a {
+  color: #e63946;
+}
+/* 
 body {
     background-color: #f1faee;
 }
