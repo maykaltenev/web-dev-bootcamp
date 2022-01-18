@@ -33,6 +33,22 @@ section span a {
 footer a {
   color: #e63946;
 }
+button:hover {
+  background-color: #e63946;
+  color: darksalmon;
+}
+.post:nth-child(2n) {
+  background-color: darkgrey;
+}
+h2::first-letter {
+  font-size: 50px;
+}
+p::first-line {
+  color: purple;
+}
+p::selection {
+  color: chartreuse;
+}
 /* 
 body {
     background-color: #f1faee;

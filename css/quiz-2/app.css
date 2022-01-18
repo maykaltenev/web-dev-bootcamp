@@ -1,0 +1,32 @@
+li {
+  color: orange;
+}
+.nav-link {
+  color: magenta;
+}
+ul li {
+  color: blue;
+}
+#submit {
+  color: blue;
+}
+
+.btn {
+  color: pink;
+}
+
+p button.btn {
+  color: purple;
+}
+
+.about .heading {
+  color: orange;
+}
+
+.about h2.heading {
+  color: pink;
+}
+
+section.about .heading {
+  color: yellow;
+}
