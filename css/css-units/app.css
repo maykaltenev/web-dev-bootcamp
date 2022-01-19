@@ -7,3 +7,25 @@ div {
   background-color: #e5812b;
   width: 80%;
 }
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200%;
+}
+
+h2 {
+  font-size: 2em;
+}
+article {
+  font-size: 30px;
+}
+button {
+  font-size: 1em;
+  padding: 0px 5em;
+  border-radius: 15em;
+  background-color: aliceblue;
+  color: #e5812b;
+}
+ul {
+  font-size: 2rem;
+}
