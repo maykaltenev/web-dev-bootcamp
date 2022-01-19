@@ -1,0 +1,21 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #3d405b;
+  margin: 10px;
+  display: inline-block;
+}
+
+#middle {
+  background-color: blueviolet;
+}
+
+#static #middle {
+  position: static;
+  top: 100px;
+}
+
+#relative #middle {
+  position: relative;
+  top: 100px;
+}
