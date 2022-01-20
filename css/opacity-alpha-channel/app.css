@@ -6,10 +6,13 @@ section {
 #rgba {
   width: 50%;
   height: 50%;
-  background-color: rgba(255, green, blue, 0, 7);
+  /* with hex you can see better the transparency */
+
+  background-color: rgba #23ba23d9;
 }
 #opacity {
   width: 50%;
   height: 50%;
   background-color: yellow;
+  opacity: 0.9;
 }
