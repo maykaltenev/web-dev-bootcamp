@@ -1,0 +1,48 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  background-color: #003049;
+  width: 90%;
+  /* height: 500px; */
+  margin: 0 auto;
+  border: 5px solid #003049;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+#container div {
+  width: 200px;
+  height: 200px;
+  /* max-width: 300px; */
+  text-align: center;
+  flex-basis: 300px;
+
+  /* flex-basis is the initial size that an element should be added into our box as and it depends on the axis direction */
+  /* flex-basis defines the initial size of an element before additional space is distributed */
+  /* flex-grow controls the amount of available space and element should take up. accepts a unit-less number value */
+  /* flex-shrink if items are larger than the container, they shrink according to flex shrink */
+}
+
+/* flex-grow */
+div:nth-of-type(1) {
+  flex-grow: 3;
+  flex-shrink: 5;
+}
+div:nth-of-type(3) {
+  flex-grow: 3;
+  flex-shrink: 3;
+}
+div:nth-of-type(4) {
+  flex-grow: 3;
+  flex-shrink: 4;
+}
+
+div:nth-of-type(5) {
+  flex-grow: 3;
+}
