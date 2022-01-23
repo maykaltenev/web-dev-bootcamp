@@ -1,0 +1,35 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2 {
+  text-align: center;
+}
+#container {
+  background-color: #003049;
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid #003049;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid black;
+  height: 500px;
+  display: flex;
+}
+main .sidebar {
+  background-color: #6930c3;
+  border: 2px solid white;
+  /* One value, unitless number: flex-grow */
+  /* flex: 1; */
+  /* Two values: flex-grow | flex-basis */
+  /* Three values: flex-grow | flex-shrink | flex-basis */
+
+  flex: 1 2 300px;
+}
+main .maincontent {
+  background-color: #80ffdb;
+  flex: 2 1 800px;
+}
