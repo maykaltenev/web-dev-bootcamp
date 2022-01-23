@@ -14,8 +14,8 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
   /* flex-wrap: wrap-reverse; */
+  /* flex wrap we change the direction of the cross axis and main axis*/
 }
 #container div {
   width: 200px;
