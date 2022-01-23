@@ -8,6 +8,8 @@ h1 {
 }
 nav {
   font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul,
@@ -15,6 +17,14 @@ li {
   display: inline;
   margin: 0;
   padding: 0;
+}
+/* nested flex */
+ul {
+  border: 1px solid red;
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-evenly;
 }
 /* @media (min-width: 600px) and (max-width: 800px) {
   h1 {
@@ -54,15 +64,31 @@ h1 {
     color: plum;
   }
 }
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   body {
     background-color: magenta;
   }
+} */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+  nav,
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-/* Responsive Design  */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+/*Responsive Design */
 /* The Problem */
-/* As mobile devices and tablets become widely available, developers had a problem... how do we create websites that look good on all screen sizes? */
-/* One Approach 
-Early on, it was common to create separate stylesheets for different devices, or even completely different websites for each size.*/
-/* Enter responsive*/
-/* These days, we typically create One website and stylesheets that is able to respond to different device sizes */
+/* As mobile devices and tablets become widely available,
+  developers had a problem... how do we create websites that look good on all screen sizes? */ /* One Approach Early on,
+  it was common to create separate stylesheets for different devices,
+  or even completely different websites for each size.*/ /* Enter responsive*/ /* These days,
+  we typically create One website and stylesheets that is able to respond to different device sizes */ ;
