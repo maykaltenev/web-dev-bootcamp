@@ -135,6 +135,7 @@ body {
   background-color: #60a9ff;
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 
@@ -143,6 +144,7 @@ body {
   border-radius: 10px;
   padding: 15px 25px;
   width: 100%;
+  display: flex;
   max-width: 960px;
   flex-direction: column;
   text-align: center;
@@ -216,4 +218,18 @@ body {
 .pricing-button:focus {
   background-color: #269aff;
   color: white;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
 }
