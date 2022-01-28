@@ -190,12 +190,14 @@ body {
 .pricing-button {
   border: 1px solid #9dd1ff;
   border-radius: 10px;
-  color: #348efe;
+
   display: inline-block;
   padding: 15px 35px;
   text-decoration: none;
   margin: 25px 0;
   transition: background-color 200ms ease-in-out;
+  background-color: #48aaff;
+  color: white;
 }
 .pricing-button:hover,
 .pricing-button:focus {
@@ -207,6 +209,11 @@ body {
 }
 .pricing-button.is-featured:hover,
 .pricing-button.is-featured:focus {
+  background-color: #269aff;
+  color: white;
+}
+.pricing-button:hover,
+.pricing-button:focus {
   background-color: #269aff;
   color: white;
 }
