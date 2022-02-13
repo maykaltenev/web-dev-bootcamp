@@ -24,13 +24,30 @@
       <h1 class="display-4 text-center text-danger bg-dark">
         Display Bootstrap
       </h1>
-      <h2 class="display-5">Buttons</h2>
+      <h2 class="display-4 bg-danger">
+        Buttons <span class="badge badge-secondary">17</span>
+      </h2>
+      <h2 class="display-3 bg-success">
+        Take Over <span class="badge badge-secondary badge-pill">42</span>
+      </h2>
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-secondary">Secondary</button>
       <button type="button" class="btn btn-outline-success">Success</button>
       <button class="btn btn-outline-danger">Danger</button>
       <button class="btn btn-outline-dark btn-lg">Dark</button>
       <button type="button" class="btn btn-outline-info">Info</button>
+      <h3>Button Groups</h3>
+      <div class="btn btn-warning">
+        <button type="button" class="btn btn-success badge rounded-pill">
+          Left
+        </button>
+        <button type="button" class="btn btn-success badge rounded-pill">
+          Middle
+        </button>
+        <button type="button" class="btn btn-success badge rounded-pill">
+          Right
+        </button>
+      </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt earum
         nulla quod numquam aspernatur, incidunt ex facilis adipisci non impedit
@@ -44,6 +61,18 @@
         </p>
         <footer class="blockquote-footer">Mr. File Getter</footer>
       </blockquote>
+    </div>
+    <h3>Alerts</h3>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those
+        fields below.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
