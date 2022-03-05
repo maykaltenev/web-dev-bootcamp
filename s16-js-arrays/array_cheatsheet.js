@@ -13,3 +13,6 @@ colors.length; //3
 
 //unshift(val) - adds value to START of an array
 //shift() - removes and returns first element in an array
+let result = Math.floor(Math.random() * 21);
+console.log(result)
+
