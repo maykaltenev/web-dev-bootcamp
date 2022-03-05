@@ -12,3 +12,8 @@ let fullAddress = restaurant["name"] + ", " +
     restaurant["zipcode"];
 
 console.log(fullAddress)
+
+const comments = [
+    { username: "Tammy", text: "lololo", votes: 9 },
+    { username: "Fish", text: "glub glub", votes: 41241 },
+]
