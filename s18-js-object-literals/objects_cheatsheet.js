@@ -14,3 +14,7 @@ dog["age"]; //7
 //updating values
 dog.breed = "mutt";
 dog["age"] = 8;
+
+const years = { 1999: 'GOOD', 2020: 'BAD' };
+
+console.log(years);
