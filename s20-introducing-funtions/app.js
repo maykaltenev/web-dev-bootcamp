@@ -31,15 +31,15 @@ function singSong() {
     console.log("RE");
     console.log("MI");
 }
-singSong()
-singSong()
-singSong()
-singSong()
-singSong()
-singSong()
-singSong()
-singSong()
-singSong()
-singSong()
-singSong()
+// singSong()
+// singSong()
+// singSong()
+// singSong()
+// singSong()
+// singSong()
+// singSong()
+// singSong()
+// singSong()
+// singSong()
+// singSong()
 
