@@ -10,13 +10,18 @@ const testScores = {
     diedre: 81,
     vonnie: 60
 }
+
 // ===================================
 // USING FOR...IN TO ITERATE AN OBJECT
 // ===================================
-
+// for in used to interred over object, will return the key
 for (let person in testScores) {
     console.log(`${person} scored ${testScores[person]}`);
 }
+// Special methods Object.keys, Object.values and Object.entries which returns arrays
+console.log(Object.keys(testScores));
+console.log(Object.values(testScores));
+console.log(Object.entries(testScores));
 
 // ==============================================
 // Using Object methods to iterate
