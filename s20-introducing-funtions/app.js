@@ -20,6 +20,7 @@ function add(x, y) {
     if (typeof x !== 'number' || typeof y !== 'number') {
         return false;
     }
+    // return capture the result of the function can be only a single value, Object, array, string.
     return x + y;
 }
 
