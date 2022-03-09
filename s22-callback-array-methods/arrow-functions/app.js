@@ -7,8 +7,6 @@
 // }
 
 const add = (a, b) => a + b;
-
-
 const square = num => {
     return num * num;
 }
