@@ -24,3 +24,11 @@ console.log(allEvens([4]));
 console.log(allEvens([e]));
 // false
 console.log(allEvens([exams]));
+
+// approach with arrow functions
+let allEvens = arr => {
+    let newArray = arr.every(num => num % 2 === 0);
+    return newArray;
+}
+// using implicit return
+let allEvents = arr => arr.every(num => num % 2 === 0);
