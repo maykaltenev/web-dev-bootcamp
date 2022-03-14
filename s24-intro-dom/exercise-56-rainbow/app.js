@@ -3,6 +3,6 @@ let spans = document.querySelectorAll('span');
 
 for (let i = 0; i < spans.length; i++) {
     for (let j = 0; j < colors.length; j++) {
-        span.style.color = colors[i];
+        spans[i].style.color = colors[i];
     }
-} c
+} 
