@@ -13,7 +13,7 @@ This project is for generating a random rgba color! Please find your true color!
 
 ### How to use this Project
 
-![demo](.//img/find-color.gif.gif)
+![demo](.//img/find-color.gif)
 
 ##### Developed With
 

@@ -10,7 +10,10 @@ const basket = document.querySelector('#list'); form.addEventListener('submit', 
 });
 const addProduct = (productInput, quantityInput) => {
     const newProduct = document.createElement('li');
-    newProduct.appendChild(quantityInput);
-    newProduct.appendChild(` ${productInput}`);
+    newProduct.innerText = (`${quantityInput} ${productInput}s`);
     basket.appendChild(newProduct);
-}
+
+};
+// newProduct.append(quantityInput);
+// newProduct.append(` ${productInput}`);
+// basket.append(newProduct);
