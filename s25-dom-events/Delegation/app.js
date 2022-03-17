@@ -1,4 +1,11 @@
 
+
+const lis = document.querySelectorAll('li');
+for (let li of lis) {
+    li.addEventListener('click', function () {
+        li.remove();
+    })
+}
 const tweetForm = document.querySelector('#tweetForm');
 const tweetsContainer = document.querySelector('#tweets');
 tweetForm.addEventListener('submit', function (e) {
