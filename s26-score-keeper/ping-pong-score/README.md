@@ -1,7 +1,7 @@
-## Find your perfect color!
+# Ping Pong Score Keeper
 
 ![img](./img/find-your-color.png)
-[Test this app yourself](https://maykaltenev.github.io/generate-random-rgba/)
+[Test this app yourself](https://maykaltenev.github.io/ping-pong-score-keeper/)
 
 ---
 
@@ -9,11 +9,9 @@
 
 ### About Project
 
-This project is for generating a random rgba color! Please find your true color!
+This application is made keep your table tennis scores!
 
 ### How to use this Project
-
-![demo](.//img/find-color.gif)
 
 ##### Developed With
 
@@ -24,4 +22,5 @@ This project is for generating a random rgba color! Please find your true color!
 - [x] _JavaScript_
 - [ ] _React_
 - [ ] _Bootstrap_
+- [x] _Bulma_
 - [ ] _npm_

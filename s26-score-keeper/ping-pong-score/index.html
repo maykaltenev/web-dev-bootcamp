@@ -19,53 +19,43 @@
                               <img src="https://images.unsplash.com/photo-1611251135345-18c56206b863?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" >
                             </figure>
                       </div>
-                 
                 <header class="card-header">
-                    <p class="card-header-title is-size-1-mobile">
+                    <p class="card-header-title ">
                         Ping Pong Score Keeper
                     </p>
                 </header>
                <div class="card-content">
                    <div class="content">
                     <div class="columns ">
-                        <div class="title column"><span id="p1Display">0</span> to <span id="p2Display">0</span></div>
-                        <div class="title column"><span id="p1Set">0</span> to <span id="p2Set">0</span></div>
+                        <label for="set" class="label is-medium">Points</label>
+                        <div class="title column po"><span id="p1Display">0</span> to <span id="p2Display">0</span></div>
+                        <label for="set" class="label  is-medium">Sets</label>
+                        <div class="title column" id="set"><span id="p1Set">0</span> to <span id="p2Set">0</span></div>
                     </div>
                         <h1 class="title">
-                    <p class="subtitle is-size-6">Use the buttons below to keep score</p>
                     <label for="playto" class="label is-medium is-inline">Playing To</label>
-                    <div class="select is-medium is-rounded" id="playto">
+                    <div class="select is-medium is-rounded" >
                         <select name="" id="playto">
                         <option value="3">3</option>
-                        <option value="4">4</option>
                         <option value="5">5</option>
-                        <option value="6">6</option>
                         <option value="7">7</option>
-                        <option value="8">8</option>
                         <option value="9">9</option>
-                        <option value="10">10</option>
                         <option value="11">11</option>
-                    </select>
+                        </select>
                     </div>
                     </h1>
                    </div>
                </div>
-          
                 <footer class="card-footer">
-                    <button id="p1Button" class="is-primary button card-footer-item ">+1 Player One</button>
-                    <button id="p2Button" class="is-info button card-footer-item">+1 Player Two</button>
-                    <button id="resetButton" class="is-danger  button card-footer-items ">Reset</button>
-                
-                
+                    <button id="p1Button" class="has-background-danger-dark has-text-light button card-footer-item ">+1 Player One</button>
+                    <button id="p2Button" class="has-background-info-dark has-text-light button card-footer-item">+1 Player Two</button>
+                    <button id="resetButton" class="is-dark  button card-footer-items ">Reset</button>
+            
                 </footer>
               </div>
           </div>
       </div>
-    
-   
-
-      
     </section>
-        <script src="app-starter.js"></script>
+        <script src="./app.js"></script>
   </body>
 </html>
