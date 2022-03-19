@@ -96,7 +96,29 @@ const fakeRequestPromise = (url) => {
 //     .catch(() => {
 //         console.log("OH NO, ERROR!!! (page1)")
 //     })
+// fakeRequestPromise('yelp.com/api/coffee/page1')
+//     .then(() => {
+//         console.log('It worked!!!! (page1)')
+//         fakeRequestPromise('yelp.com/api/coffee/page2')
+//             .then(() => {
+//                 console.log('Promise resolved(page2)')
+//                 fakeRequestPromise('yelp.com/api/coffee/page3')
+//                     .then(() => {
+//                         console.log('Promise resolved (page3)')
+//                     })
+//                     .catch(() => {
+//                         console.log('Oh.no error(page3)')
+//                     })
+//             })
+//             .catch(() => {
+//                 console.log('Promise rejected!')
+//                 console.log('Oh no, error! (page2)')
+//             })
 
+//     })
+//     .catch(() => {
+//         console.log('Oh no, error! (page1)')
+//     })
 
 // THE CLEANEST OPTION WITH THEN/CATCH
 // RETURN A PROMISE FROM .THEN() CALLBACK SO WE CAN CHAIN!
@@ -121,25 +143,22 @@ const fakeRequestPromise = (url) => {
 //     })
 
 fakeRequestPromise('yelp.com/api/coffee/page1')
-    .then(() => {
-        console.log('It worked!!!! (page1)')
-        fakeRequestPromise('yelp.com/api/coffee/page2')
-            .then(() => {
-                console.log('Promise resolved(page2)')
-                fakeRequestPromise('yelp.com/api/coffee/page3')
-                    .then(() => {
-                        console.log('Promise resolved (page3)')
-                    })
-                    .catch(() => {
-                        console.log('Oh.no error(page3)')
-                    })
-            })
-            .catch(() => {
-                console.log('Promise rejected!')
-                console.log('Oh no, error! (page2)')
-            })
-
+    .then((data) => {
+        console.log('IT WORKED!!!!!! (page1')
+        console.log(data)
+        return fakeRequestPromise('yelp.com/api/coffee/page2')
     })
-    .catch(() => {
-        console.log('Oh no, error! (page1)')
+    .then((data) => {
+        console.log('IT WORKED!!!!!! (page2')
+        console.log(data)
+        return fakeRequestPromise('yelp.com/api/coffee/page3')
+    })
+    .then((data) => {
+        console.log('IT WORKED!!!!!! (page3')
+        console.log(data)
+        return fakeRequestPromise('yelp.com/api/coffee/page4')
+    })
+    .catch((data) => {
+        console.log('Oh no, a request failed')
+        confirm.log(err)
     })
