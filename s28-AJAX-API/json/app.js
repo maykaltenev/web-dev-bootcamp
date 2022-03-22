@@ -4,4 +4,17 @@ const data = `{"ticker":{"base":"BTC","target":"USD","price":"11288.49813464","v
 // THIS IS A JS OBJECT
 const parsedData = JSON.parse(data);
 
+// Object to JSON String
+// This data is now readable from other programming languages, example: Python, Ruby and etc. There should be parsed to the native language
+const dog = { breed: 'lab', color: 'black', isALive: true, owner: undefined }
+let dogJsonString = JSON.stringify(dog)
+console.log(JSON.stringify(dogJsonString));
 
+let priceFromParsedData = parsedData.ticker.price;
+console.log(priceFromParsedData)
+
+// XML is not used, AJAX stands for:
+// Asynchronous
+// JavaScript
+// And
+// XML (where everybody are referring nowadays to JSON) //AJAJ
