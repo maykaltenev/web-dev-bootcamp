@@ -1,6 +1,10 @@
+// the newer way of making request via JS
+// supports promises
+// Not supported in IE
 fetch("https://swapi.dev/api/people/1/")
   .then((res) => {
     console.log("RESOLVED!", res);
+    // res.json return a promise
     return res.json();
   })
   .then((data) => {

@@ -18,3 +18,6 @@ console.log(priceFromParsedData)
 // JavaScript
 // And
 // XML (where everybody are referring nowadays to JSON) //AJAJ
+
+// queryString
+// ?sort=desc&color=blue
