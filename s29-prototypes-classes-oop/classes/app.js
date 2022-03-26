@@ -1,4 +1,6 @@
+// capitalize the first letter in class
 class Color {
+	// alway write constructor 
 	constructor(r, g, b, name) {
 		this.r = r;
 		this.g = g;
@@ -20,6 +22,9 @@ class Color {
 		return (
 			'#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)
 		);
+	}
+	greet() {
+		return `Hello from ${this.name}!`
 	}
 }
 const red = new Color(255, 67, 89, 'tomato');
